@@ -1046,11 +1046,15 @@ a:hover {
   color: var(--emerald-600);
 }
 
-.ladder-step strong {
+.ladder-step > strong {
   display: block;
   font-size: 0.96rem;
   color: var(--forest-950);
   margin: 0.1rem 0 0.18rem;
+}
+
+.ladder-step > span:last-child strong {
+  color: var(--forest-950);
 }
 
 .ladder-step span:last-child {
@@ -1203,6 +1207,15 @@ a:hover {
   height: 100%;
   object-fit: cover;
   transition: transform 0.35s ease;
+}
+
+.gallery-thumb.is-wide {
+  aspect-ratio: 3 / 2;
+  background: #180f29;
+}
+
+.gallery-thumb.is-wide img {
+  object-fit: contain;
 }
 
 .gallery-thumb:hover img {
